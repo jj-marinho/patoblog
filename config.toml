@@ -1,0 +1,68 @@
+## Basic Configuration
+baseurl = "https://opato.top/"
+languageCode = "pt"
+
+title = "Pato Top"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+# enableRobotsTXT = true
+
+# summarylength = 30
+
+#paginate = 5
+
+## Site Settings
+[params]
+    author = "Joao Guilherme Jarochinski Marinho"
+    title = "Blog Pessoal - opato.top"
+    # description = "..."
+    authorimage = "/img/patotop.jpeg"
+    dateformat = "02/01/2006"
+
+    themeColor = "theme-base-09"
+
+    # sidebar, copyright & license
+    copyright = "Joao Guilherme J Marinho"
+    since = 2020
+    showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "dracula"
+    
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
+
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
+
+## Social Accounts
+[params.social]
+    github = "joaogui3856"
+    gitlab = "joao_gjmarinho"
+    linkedin = "joao-guilherme-jarochinski-marinho"
+    telegram = "joao_oPato"
+    email = "eusou@opato.top"
+
+## Main Menu
+[[menu.main]]
+    name = "Sobre"
+    identifier = "about"
+    weight = 100
+    url = "/about"
+[[menu.main]]
+    name = "Postagens"
+    weight = 300
+    identifier = "postagens"
+    url = "/postagens/"
+[[menu.main]]
+    name = "Portfólio"
+    identifier = "portfolio"
+    weight = 200
+    url = "/portfolio/"

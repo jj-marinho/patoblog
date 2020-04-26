@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://opato.top/portfolio/portfolio/</loc>
+    <lastmod>2020-04-26T16:19:34-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/portfolio/</loc>
+    <lastmod>2020-04-26T16:19:34-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/</loc>
+    <lastmod>2020-04-26T16:11:34-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/about/</loc>
+    <lastmod>2020-04-26T16:11:34-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/postagens/</loc>
+    <lastmod>2020-04-26T16:06:20-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/postagens/test/</loc>
+    <lastmod>2020-04-26T16:06:20-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/tags/</loc>
+  </url>
+  
+</urlset>
