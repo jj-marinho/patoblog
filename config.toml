@@ -3,7 +3,6 @@ baseurl = "https://opato.top/"
 languageCode = "pt"
 
 title = "Pato Top"
-theme = "hyde-hyde"
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"

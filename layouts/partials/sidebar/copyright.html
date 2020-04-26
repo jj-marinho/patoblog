@@ -1,0 +1,14 @@
+{{ with .Site.Params.copyright }}
+<div class="copyright">
+  &copy; {{ with $.Site.Params.since }}{{ if lt . now.Year }}{{ . | safeHTML }} - {{ end }}{{ end }}{{ now.Format "2006"}} {{ . | safeHTML }}
+  {{ with $.Site.Params.license }}
+    <a href="{{$.Site.Params.licenseURL | safeHTML}}">{{ . | safeHTML }}</a>
+  {{end}}
+  <br> Built with Hugo
+</div>
+{{ end }}
+{{ with .Site.Params.showBuiltWith }}
+<div class="built-with" style="text-align: center; font-size: 13px; text-decoration: line-through;">
+ PS: Eu sei que a imagem<br> é de um ganso
+</div>
+{{ end }}
