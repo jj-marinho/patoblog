@@ -1,7 +1,9 @@
 ---
-title: "Apenas um teste lindoso"
-date: 2020-04-26T16:19:34-03:00
-draft: false
+title: "Primeiro projeto web da minha vida"
+description: "Ficou uma bosta, porém bom"
+date: '10/02/2020'
+link: '/crazyduck'
+layout: 'portfolio'
+featured: false
 ---
-
-Nossa que coisa maislegal
+Nada a declarar, apenas veja

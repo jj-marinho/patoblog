@@ -61,7 +61,7 @@ title = "Pato Top"
     identifier = "postagens"
     url = "/postagens/"
 [[menu.main]]
-    name = "Portfólio"
+    name = "Portfolio"
     identifier = "portfolio"
     weight = 200
     url = "/portfolio/"
