@@ -287,7 +287,8 @@ a {
 
 .img--headshot {
   height: 115px;
-  width: 115px; }
+  width: 115px; 
+}
 
 .img--caption {
   font-style: italic; }
