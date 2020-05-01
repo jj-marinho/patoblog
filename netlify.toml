@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/crazyduck"
-  to = " https://gracious-rosalind-d2ac04.netlify.app/"
-  status = 200
-  force = true
