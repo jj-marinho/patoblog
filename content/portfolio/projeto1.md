@@ -1,6 +1,6 @@
 ---
 title: "Primeiro projeto web da minha vida"
-description: "Ficou uma bosta"
+description: "Perfeição"
 screenshot: "projeto1foto.png"
 date: '10/02/2020'
 link: 'https://distracted-noyce-3382a0.netlify.app/'

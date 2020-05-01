@@ -51,17 +51,22 @@ title = "O Pato"
 
 ## Main Menu
 [[menu.main]]
+    name = "Inicio"
+    identifier = "home"
+    weight = 1
+    url = "/"
+[[menu.main]]
     name = "Sobre"
     identifier = "about"
     weight = 100
     url = "/about"
 [[menu.main]]
     name = "Postagens"
-    weight = 300
+    weight = 200
     identifier = "posts"
     url = "/posts/"
 [[menu.main]]
     name = "Portfolio"
     identifier = "portfolio"
-    weight = 200
+    weight = 300
     url = "/portfolio/"
