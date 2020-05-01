@@ -3,16 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://opato.top/portfolio/portfolio/</loc>
-    <lastmod>2020-04-26T16:19:34-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://opato.top/portfolio/</loc>
-    <lastmod>2020-04-26T16:19:34-03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://opato.top/</loc>
     <lastmod>2020-04-26T16:11:34-03:00</lastmod>
   </url>
@@ -34,6 +24,14 @@
   
   <url>
     <loc>https://opato.top/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/portfolio/portfolio/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/portfolio/</loc>
   </url>
   
   <url>
