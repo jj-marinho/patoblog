@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>flexbox on Pato Top</title>
-    <link>https://opato.top/tags/flexbox/</link>
+    <link>/tags/flexbox/</link>
     <description>Recent content in flexbox on Pato Top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     <lastBuildDate>Thu, 30 Apr 2020 22:51:37 -0300</lastBuildDate>
     
-	<atom:link href="https://opato.top/tags/flexbox/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/flexbox/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Flexbox e Grid</title>
-      <link>https://opato.top/posts/flexbox-e-grid/</link>
+      <link>/posts/flexbox-e-grid/</link>
       <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
       
-      <guid>https://opato.top/posts/flexbox-e-grid/</guid>
+      <guid>/posts/flexbox-e-grid/</guid>
       <description>Posicionando Com Flexbox e Grid Indíce Flexbox  Background Container Itens  Grid  Background Container Itens  Bibliografia Flexbox Grid Flexbox Sobre o Flexbox  Habilita um container a alterar a largura e comprimento dos itens dentro dele Direção Principal = Main Direção Secundária = Cross Depende da propriedade flex-direction  Flex Container Definições do container flex  display: flex; flex-direction: Direção e sentido principais  row / row-reverse column / column-reverse   flex-wrap: Todos os items devem ficar na mesma linha, ou devem ir pra próxima em caso de falta de espaço?</description>
     </item>
     

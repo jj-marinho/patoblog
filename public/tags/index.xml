@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Pato Top</title>
-    <link>https://opato.top/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Pato Top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     <lastBuildDate>Thu, 30 Apr 2020 22:51:37 -0300</lastBuildDate>
     
-	<atom:link href="https://opato.top/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>css</title>
-      <link>https://opato.top/tags/css/</link>
+      <link>/tags/css/</link>
       <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
       
-      <guid>https://opato.top/tags/css/</guid>
+      <guid>/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dev</title>
-      <link>https://opato.top/tags/dev/</link>
+      <link>/tags/dev/</link>
       <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
       
-      <guid>https://opato.top/tags/dev/</guid>
+      <guid>/tags/dev/</guid>
       <description></description>
     </item>
     
     <item>
       <title>flexbox</title>
-      <link>https://opato.top/tags/flexbox/</link>
+      <link>/tags/flexbox/</link>
       <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
       
-      <guid>https://opato.top/tags/flexbox/</guid>
+      <guid>/tags/flexbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>grid</title>
-      <link>https://opato.top/tags/grid/</link>
+      <link>/tags/grid/</link>
       <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
       
-      <guid>https://opato.top/tags/grid/</guid>
+      <guid>/tags/grid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>javascript</title>
-      <link>https://opato.top/tags/javascript/</link>
+      <link>/tags/javascript/</link>
       <pubDate>Thu, 30 Apr 2020 21:39:07 -0300</pubDate>
       
-      <guid>https://opato.top/tags/javascript/</guid>
+      <guid>/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>languages</title>
-      <link>https://opato.top/tags/languages/</link>
+      <link>/tags/languages/</link>
       <pubDate>Thu, 30 Apr 2020 21:39:07 -0300</pubDate>
       
-      <guid>https://opato.top/tags/languages/</guid>
+      <guid>/tags/languages/</guid>
       <description></description>
     </item>
     

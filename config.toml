@@ -1,5 +1,5 @@
 ## Basic Configuration
-baseurl = "https://opato.top/"
+baseurl = ""
 languageCode = "pt"
 
 title = "Pato Top"
