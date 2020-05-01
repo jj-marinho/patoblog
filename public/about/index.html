@@ -65,39 +65,12 @@
       pre {
         padding: 10px 10px;
       }
+      
       .img--headshot {
         width: auto;
         height: 130px;
       }
-      .content {
-      }
-      @media screen and (min-width: 768px) {
-        .content {
-          margin-left: 20rem;
-          max-width: 60rem;
-        }
-        .sidebar {
-          width: 288px;
-        }
-      }
-      @media screen and (min-width: 768px) and (max-width: 1081px){
-        .content {
-          margin-left: 10rem;
-          margin-right: 0;
-          max-width: 60rem;
-        }
-        .sidebar {
-          width: 10rem;
-          padding: 2rem 0rem;
-        }
-        .img--headshot {
-          width: auto;
-          height: 65px;
-        }
-        .site__title {
-          font-size: 2.3rem;
-        }
-      }
+
       @media screen and (max-width: 767px) {
       
         .collapsible-menu {
@@ -108,8 +81,42 @@
           z-index: 9999;
           padding: 0px 10px;
         }
+
         code {
           font-size: 0.7rem;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .content {
+          margin-left: 20rem;
+          max-width: 60rem;
+        }
+
+        .sidebar {
+          width: 288px;
+        }
+      }
+      
+      @media screen and (min-width: 768px) and (max-width: 1081px){
+        .content {
+          margin-left: 10rem;
+          margin-right: 0;
+          max-width: 60rem;
+        }
+
+        .sidebar {
+          width: 10rem;
+          padding: 2rem 0rem;
+        }
+
+        .img--headshot {
+          width: auto;
+          height: 65px;
+        }
+
+        .site__title {
+          font-size: 2.3rem;
         }
       }
     </style>
