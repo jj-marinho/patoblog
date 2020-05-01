@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on O Pato</title>
+    <link>https://opato.top/categories/</link>
+    <description>Recent content in Categories on O Pato</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Thu, 30 Apr 2020 22:51:37 -0300</lastBuildDate>
+    
+	<atom:link href="https://opato.top/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>dev</title>
+      <link>https://opato.top/categories/dev/</link>
+      <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
+      
+      <guid>https://opato.top/categories/dev/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
