@@ -14,6 +14,11 @@
     z-index: 0;
   }
 
+  html {
+    padding: env(safe-area-inset);
+  }
+  
+
   @media screen and (max-width: 767px) {
     .collapsible-menu {
       position: fixed;
@@ -27,6 +32,7 @@
     code {
       font-size: 0.7rem;
     }
+
     .content.container {
       padding-top: 3rem;
     }
@@ -101,4 +107,4 @@
 <meta name="viewport" content="height=device-height, 
                       width=device-width, initial-scale=1.0, 
                       minimum-scale=1.0, maximum-scale=1.0, 
-                      user-scalable=no, target-densitydpi=device-dpi">
+                      user-scalable=no, target-densitydpi=device-dpi, viewport-fit=cover">
