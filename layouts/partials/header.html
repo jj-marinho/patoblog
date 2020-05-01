@@ -12,4 +12,25 @@
     <link rel="shortcut icon" href="/favicon.png">
     {{ partial "header/feeds.html" . }}
     {{ partial "header/custom.html" }}
+    <style>
+      code {background-color: transparent;}
+      @media screen and (min-width: 768px) {
+        .content {
+          margin-left: 20rem;
+          max-width: 60rem;
+        }
+      }
+      @media screen and (max-width: 767px) {
+      
+        .collapsible-menu {
+          position: fixed;
+          background-color: #d28445;
+          width: 100vw;
+          left: 0px;
+        }
+        code {
+          font-size: 0.7rem;
+        }
+      }
+    </style>
 </head>

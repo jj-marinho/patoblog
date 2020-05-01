@@ -6,7 +6,5 @@ draft: false
 
 # Curriculo
 
-- Lindo
-- Belo
-- Formoso
-- Pato
+### Por enquanto é melhor acessar meu Linkedin
+[Linkedin](https://www.linkedin.com/in/joao-guilherme-jarochinski-marinho-5aba78158/)
