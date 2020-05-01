@@ -90,6 +90,11 @@
     .sidebar {
       height: 0vh;
     }
+
+    .sidebar-nav {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -101,8 +106,22 @@
     .sidebar {
       width: 288px;
     }
+
+    .sidebar .container {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    .copyright {
+      margin-top: auto;
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
     .sidebar-nav > li:first-child { 
       display: none;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 
