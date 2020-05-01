@@ -2,7 +2,7 @@
 baseurl = "https://opato.top/"
 languageCode = "pt"
 
-title = "Pato Top"
+title = "O Pato"
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"

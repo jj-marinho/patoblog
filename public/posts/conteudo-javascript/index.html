@@ -17,7 +17,7 @@
     
     
 
-<title>Mais um guia de JavaScript • Pato Top</title>
+<title>Mais um guia de JavaScript • O Pato</title>
 
 
 <meta name="twitter:card" content="summary"/>
@@ -66,10 +66,6 @@
       pre {
         padding: 10px 10px;
       }
-      code {
-        background-color: transparent;
-        padding: 0px 0px;
-      }
       @media screen and (min-width: 768px) {
         .content {
           margin-left: 20rem;
@@ -100,7 +96,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://opato.top/">Pato Top</a>
+        <a href="https://opato.top/">O Pato</a>
       </span>
       
         
@@ -118,7 +114,7 @@
     </div>
     <div class="collapsible-menu">
       <input type="checkbox" id="menuToggle">
-      <label for="menuToggle">Pato Top</label>
+      <label for="menuToggle">O Pato</label>
       <div class="menu-content">
         <div>
 	<ul class="sidebar-nav">
@@ -240,7 +236,6 @@
     
     
     <br/>
-    <i class="fas fa-clock"></i> 21 min read
 </div>
 
 
@@ -357,7 +352,8 @@ Maneira 2
 <span style="color:#75715e">// Na maioria das vezes não é necessário o &#34;;&#34;
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Funciona perfeitamente sem o ;&#34;</span>)
 <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Mas ainda é uma boa ideia usá-lo&#34;</span>);
-<span style="color:#75715e">// Em alguma linha de código muito exotérica o JavaScript pode não ler corretamente suas declarações
+<span style="color:#75715e">// Em alguma linha de código muito exotérica 
+</span><span style="color:#75715e">// o JavaScript pode não ler corretamente suas declarações
 </span></code></pre></div><h3 id="tipos-de-variáveis">Tipos de Variáveis</h3>
 <ul>
 <li>Para declarar uma variável usamos duas palavras-chaves:
@@ -367,18 +363,21 @@ Maneira 2
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">variavel</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;textinho legal&#34;</span>; <span style="color:#75715e">// Variáveis criadas com let possuem escopo da mesma maneira
-</span><span style="color:#75715e"></span>                                 <span style="color:#75715e">// que você esta acostumado na maioria das linguagens
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">variavel_constante</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>; <span style="color:#75715e">// const define variáveis constantes, ou seja
-</span><span style="color:#75715e"></span>                               <span style="color:#75715e">// que não mudam. É util para definir funções também
-</span><span style="color:#75715e"></span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Variáveis criadas com let possuem escopo da mesma maneira
+</span><span style="color:#75715e">// que você esta acostumado na maioria das linguagens
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">variavel</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;textinho legal&#34;</span>; 
+
+<span style="color:#75715e">// const define variáveis constantes, ou seja
+</span><span style="color:#75715e">// que não mudam. É util para definir funções também
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">variavel_constante</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>; 
+
 </code></pre></div><ul>
 <li>Antigamente o único tipo de variável que o JavaScript possuia era &ldquo;var&rdquo;</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">variavel_antiga</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>; <span style="color:#75715e">// Ela tem algumas peculiaridades e foi largamente
-</span><span style="color:#75715e"></span>                          <span style="color:#75715e">// Substituida por let e const
-</span></code></pre></div><h3 id="tipos-de-dados">Tipos de Dados</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Ela tem algumas peculiaridades e foi largamente
+</span><span style="color:#75715e">// Substituida por let e const
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">variavel_antiga</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>; 
+</code></pre></div><h3 id="tipos-de-dados">Tipos de Dados</h3>
 <ul>
 <li>Numérico</li>
 </ul>
@@ -390,8 +389,8 @@ Maneira 2
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">comum</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;String Comum&#34;</span>;
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">crase</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Crase ao invés de aspas possibilita a inserção de variáveis assim: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">comum</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
-<span style="color:#75715e">// Uma string envolta em crase usa a notação ${variavel} para inserir uma variável,
-</span><span style="color:#75715e">// facilita quando você estiver fazendo uma string com muitas variáveis
+<span style="color:#75715e">// Podemos inserir uma variável na string usando a notação ${var}
+</span><span style="color:#75715e">// Facilita quando você estiver fazendo uma string com muitas variáveis
 </span></code></pre></div><ul>
 <li>Booleano
 <ul>
@@ -414,7 +413,8 @@ Maneira 2
 </span></code></pre></div><ul>
 <li>Null - Nulo</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nao_sei</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">// Não sei o valor ainda, portanto defino como null para evitar erros
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nao_sei</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">// Não sei o valor ainda
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// portanto defino como null para evitar erros
 </span></code></pre></div><ul>
 <li>Objetos e Arrays
 <ul>
@@ -509,11 +509,14 @@ Maneira 2
 <span style="color:#75715e">// Do while, executa uma vez depois checa se a condição é verdadeira
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">do</span>{
   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#e6db74">&#34;Só executo uma vez :(&#34;</span> );
-} <span style="color:#66d9ef">while</span>(<span style="color:#66d9ef">false</span>) <span style="color:#75715e">// Não é pra repetir, mas o código executa uma vez por conta do &#34;do&#34;
+} <span style="color:#66d9ef">while</span>(<span style="color:#66d9ef">false</span>) <span style="color:#75715e">// Não é pra repetir
+</span><span style="color:#75715e">// mas o código executa uma vez por conta do &#34;do&#34;
 </span><span style="color:#75715e"></span>
 
-<span style="color:#75715e">// for, que permite declarar uma variável que só existe durante a execução do Loop
-</span><span style="color:#75715e">// normalmente essa variável é um contador. Por convenção se usa o &#34;i&#34;
+<span style="color:#75715e">// for, que permite declarar uma variável 
+</span><span style="color:#75715e">// que só existe durante a execução do Loop
+</span><span style="color:#75715e">// normalmente essa variável é um contador.
+</span><span style="color:#75715e">// Por convenção se usa o &#34;i&#34;, &#34;j&#34; e &#34;k&#34;, nesta sequencia
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">// Declaração de Variavel ; Condição ; Expressão de Finalização
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
@@ -525,7 +528,8 @@ Maneira 2
 <li>No JavaScript, funções são tratados como valores comuns, e podem até ser inseridas dentro de uma variável</li>
 <li>Portanto, temos três maneiras de declarar funções no JavaScript:</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// A primeira e mais simples é declarando uma função usando a palavra-chave &#34;function&#34;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// A primeira e mais simples é declarando uma função
+</span><span style="color:#75715e">// usando a palavra-chave &#34;function&#34;
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">// Método 1 - Declaração de Função ou Function Declaration
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">imprimirNaTela</span>(<span style="color:#a6e22e">texto</span>) {
@@ -640,10 +644,11 @@ Maneira 2
 </span><span style="color:#75715e"></span>  <span style="color:#75715e">// variaveis no lugar das &#34;chaves&#34; do objeto
 </span><span style="color:#75715e"></span>
   [<span style="color:#a6e22e">propriedade</span>]<span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Voar, Nadar e Andar&#34;</span>, <span style="color:#75715e">// Esta declaração se transforma em:
-</span><span style="color:#75715e"></span>                                        <span style="color:#75715e">// &#34;poderesEspeciais&#34;: &#34;Voar, Nadar e Andar&#34;
+</span><span style="color:#75715e"></span>                                <span style="color:#75715e">// &#34;poderesEspeciais&#34;: &#34;Voar, Nadar e Andar&#34;
 </span><span style="color:#75715e"></span>};
 
-<span style="color:#75715e">// Da mesma maneira, não podemos acessar a chave &#34;poderesEspeciais&#34; usando a notação de ponto
+<span style="color:#75715e">// Da mesma maneira, não podemos acessar a chave &#34;poderesEspeciais&#34;
+</span><span style="color:#75715e">// usando a notação de ponto
 </span><span style="color:#75715e"></span>
 <span style="color:#a6e22e">objeto</span>.<span style="color:#a6e22e">propriedade</span>  <span style="color:#75715e">// ERRO
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">objeto</span>[<span style="color:#a6e22e">propriedade</span>] <span style="color:#75715e">// Voar, Nadar e Andar
@@ -714,9 +719,10 @@ Maneira 2
   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Novo usuario com nome </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">nome</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> e senha </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">senha</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
 };
 
-<span style="color:#75715e">// É importante usar a palavra-chave &#34;new&#34; antes de chamar uma função construtora
-</span><span style="color:#75715e">// Ela é necessária para o bom funcionamento de declarações com &#34;this&#34;, entre outras coisas
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">joao</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Usuario</span>(<span style="color:#e6db74">&#34;joao&#34;</span>, <span style="color:#e6db74">&#34;hunter2&#34;</span>);
+<span style="color:#75715e">/* É importante usar a palavra-chave &#34;new&#34; antes de chamar uma função construtora
+</span><span style="color:#75715e">   ela é necessária para o bom funcionamento de declarações com &#34;this&#34;,
+</span><span style="color:#75715e">   entre outras coisas */</span>
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">joao</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Usuario</span>(<span style="color:#e6db74">&#34;joao&#34;</span>, <span style="color:#e6db74">&#34;hunter2&#34;</span>);
 </code></pre></div><h2 id="json">JSON</h2>
 <h3 id="o-que-é-json">O que é JSON</h3>
 <ul>
@@ -860,7 +866,8 @@ Maneira 2
 
 <span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">sort</span>() <span style="color:#75715e">// 11, 115, 12, 22, 34, 47 -&gt; Ordenação alfabética: 115 &lt; 12
 </span><span style="color:#75715e"></span>
-<span style="color:#75715e">// Usando &#34;(a, b) =&gt; a - b&#34;  como função de apoio teremos a versão numérica deste sort
+<span style="color:#75715e">// Usando &#34;(a, b) =&gt; a - b&#34;  como função de apoio 
+</span><span style="color:#75715e">// teremos a versão numérica deste sort
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">sort</span>((<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) =&gt; <span style="color:#a6e22e">a</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 11, 12, 22, 34, 47, 115
 </span></code></pre></div><h3 id="filtrando-arrays">Filtrando Arrays</h3>
 <ul>
@@ -963,7 +970,8 @@ Maneira 2
   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">warn</span>(<span style="color:#e6db74">&#39;ERROR(&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">code</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;): &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">message</span>);
 };
 
-<span style="color:#75715e">// Função assíncrona, visto que pode demorar para conseguirmos a localização do usuário por GPS
+<span style="color:#75715e">// Função assíncrona, visto que pode demorar para 
+</span><span style="color:#75715e">// conseguirmos a localização do usuário por GPS
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">geolocation</span>.<span style="color:#a6e22e">getCurrentPosition</span>(<span style="color:#a6e22e">success</span>, <span style="color:#a6e22e">error</span>)
 </code></pre></div><ul>
 <li>Em geral, Callbacks são um modo nada intuitivo de resolver problemas relacionados a assincronia</li>
@@ -1046,7 +1054,8 @@ Exemplo de uso conjunto de async-await</li>
     <span style="color:#a6e22e">setTimeout</span>(() =&gt; <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;Finalizado!&#34;</span>), <span style="color:#ae81ff">1000</span>)
   });
 
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">promise</span>; <span style="color:#75715e">// Espera até que a Promise anterior seja resolvida
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">promise</span>; <span style="color:#75715e">// Espera até que a Promise anterior
+</span><span style="color:#75715e"></span>                                 <span style="color:#75715e">// seja resolvida
 </span><span style="color:#75715e"></span>
   <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">resultado</span>); <span style="color:#75715e">// Com o await, poderemos ter certeza de que o 
 </span><span style="color:#75715e"></span>                    <span style="color:#75715e">// resultado já foi declarado antes de usá-lo
@@ -1091,7 +1100,8 @@ Exemplo de uso conjunto de async-await</li>
 <span style="color:#a6e22e">barulhoDoPato</span>();
 
 </code></pre></div><h4 id="ou">OU</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Também podemos importar um módulo inteiro e dar um nome a ele da seguinte maneira:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Também podemos importar um módulo inteiro
+</span><span style="color:#75715e">// dando um nome a ele da seguinte maneira:
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">barulhos</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./import.js&#34;</span>;
 
 <span style="color:#75715e">// Usando essa sintaxe podemos chamar a função usando a notação de .:
@@ -1136,8 +1146,9 @@ Exemplo de uso conjunto de async-await</li>
 </span><span style="color:#75715e"></span>
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">configuracao</span> <span style="color:#f92672">=</span> {
   <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;post&#39;</span>, <span style="color:#75715e">// Método da Requisição
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;https://jsonplaceholder.typicode.com/posts&#39;</span>,  <span style="color:#75715e">// URL onde a Requisição será realizada
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {  <span style="color:#75715e">// Dados que devem ser enviados na Requisição
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// URL onde a Requisição será realizada
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;https://jsonplaceholder.typicode.com/posts&#39;</span>,  
+  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {  <span style="color:#75715e">// Dados que devem ser enviados na Requisição
 </span><span style="color:#75715e"></span>    <span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Fred&#39;</span>,
     <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Flintstone&#39;</span>
   }
@@ -1185,6 +1196,17 @@ Exemplo de uso conjunto de async-await</li>
 
 <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
 
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
 
 
 

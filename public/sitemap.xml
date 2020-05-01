@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://opato.top/</loc>
+    <lastmod>2020-04-30T22:51:37-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://opato.top/posts/</loc>
     <lastmod>2020-04-30T22:51:37-03:00</lastmod>
   </url>
@@ -63,21 +68,15 @@
   </url>
   
   <url>
-    <loc>https://opato.top/</loc>
-    <lastmod>2020-04-26T16:11:34-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://opato.top/about/</loc>
-    <lastmod>2020-04-26T16:11:34-03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://opato.top/portfolio/projeto1/</loc>
   </url>
   
   <url>
     <loc>https://opato.top/portfolio/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/about/</loc>
   </url>
   
 </urlset>

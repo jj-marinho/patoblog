@@ -4,7 +4,6 @@ date: 2020-04-30T21:39:07-03:00
 tags : [ "dev", "javascript", "languages"]
 categories : [ "dev" ]
 layout: post
-highlight: true
 weight: 1
 ---
 
@@ -113,7 +112,8 @@ console.log("Aparece no Console de Desenvolvedor");
 // Na maioria das vezes não é necessário o ";"
 alert("Funciona perfeitamente sem o ;")
 alert("Mas ainda é uma boa ideia usá-lo");
-// Em alguma linha de código muito exotérica o JavaScript pode não ler corretamente suas declarações
+// Em alguma linha de código muito exotérica 
+// o JavaScript pode não ler corretamente suas declarações
 ```
 
 ### Tipos de Variáveis
@@ -122,18 +122,21 @@ alert("Mas ainda é uma boa ideia usá-lo");
   - let -> Variáveis mutáveis, com escopo.
   - const -> Variáveis imutáveis, também com escopo
 ```javascript
-let variavel = "textinho legal"; // Variáveis criadas com let possuem escopo da mesma maneira
-                                 // que você esta acostumado na maioria das linguagens
+// Variáveis criadas com let possuem escopo da mesma maneira
+// que você esta acostumado na maioria das linguagens
+let variavel = "textinho legal"; 
 
-const variavel_constante = 30; // const define variáveis constantes, ou seja
-                               // que não mudam. É util para definir funções também
+// const define variáveis constantes, ou seja
+// que não mudam. É util para definir funções também
+const variavel_constante = 30; 
 
 ```
 - Antigamente o único tipo de variável que o JavaScript possuia era "var"
 
 ```js
-var variavel_antiga = 40; // Ela tem algumas peculiaridades e foi largamente
-                          // Substituida por let e const
+// Ela tem algumas peculiaridades e foi largamente
+// Substituida por let e const
+var variavel_antiga = 40; 
 ```
 
 
@@ -151,8 +154,8 @@ let flutuante = 23.2;
 ```js
 let comum = "String Comum";
 let crase = `Crase ao invés de aspas possibilita a inserção de variáveis assim: ${comum}`
-// Uma string envolta em crase usa a notação ${variavel} para inserir uma variável,
-// facilita quando você estiver fazendo uma string com muitas variáveis
+// Podemos inserir uma variável na string usando a notação ${var}
+// Facilita quando você estiver fazendo uma string com muitas variáveis
 ```
 - Booleano
   - Verdadeiro ou Falso
@@ -172,7 +175,8 @@ alert(x) // resultado: undefined
 
 - Null - Nulo
 ```js
-let nao_sei = null; // Não sei o valor ainda, portanto defino como null para evitar erros
+let nao_sei = null; // Não sei o valor ainda
+                    // portanto defino como null para evitar erros
 ```
 
 - Objetos e Arrays
@@ -273,11 +277,14 @@ while(true){ // Sempre sera verdade
 // Do while, executa uma vez depois checa se a condição é verdadeira
 do{
   console.log( "Só executo uma vez :(" );
-} while(false) // Não é pra repetir, mas o código executa uma vez por conta do "do"
+} while(false) // Não é pra repetir
+// mas o código executa uma vez por conta do "do"
 
 
-// for, que permite declarar uma variável que só existe durante a execução do Loop
-// normalmente essa variável é um contador. Por convenção se usa o "i"
+// for, que permite declarar uma variável 
+// que só existe durante a execução do Loop
+// normalmente essa variável é um contador.
+// Por convenção se usa o "i", "j" e "k", nesta sequencia
 
 // Declaração de Variavel ; Condição ; Expressão de Finalização
 for (let i = 0; i < 10; i++){
@@ -289,7 +296,8 @@ for (let i = 0; i < 10; i++){
 - No JavaScript, funções são tratados como valores comuns, e podem até ser inseridas dentro de uma variável
 - Portanto, temos três maneiras de declarar funções no JavaScript:
 ```js
-// A primeira e mais simples é declarando uma função usando a palavra-chave "function"
+// A primeira e mais simples é declarando uma função
+// usando a palavra-chave "function"
 
 // Método 1 - Declaração de Função ou Function Declaration
 function imprimirNaTela(texto) {
@@ -399,10 +407,11 @@ let objeto = {
   // variaveis no lugar das "chaves" do objeto
 
   [propriedade]: "Voar, Nadar e Andar", // Esta declaração se transforma em:
-                                        // "poderesEspeciais": "Voar, Nadar e Andar"
+                                // "poderesEspeciais": "Voar, Nadar e Andar"
 };
 
-// Da mesma maneira, não podemos acessar a chave "poderesEspeciais" usando a notação de ponto
+// Da mesma maneira, não podemos acessar a chave "poderesEspeciais"
+// usando a notação de ponto
 
 objeto.propriedade  // ERRO
 objeto[propriedade] // Voar, Nadar e Andar
@@ -478,8 +487,9 @@ const Usuario = function(nome, senha){
   console.log(`Novo usuario com nome ${this.nome} e senha ${this.senha}`)
 };
 
-// É importante usar a palavra-chave "new" antes de chamar uma função construtora
-// Ela é necessária para o bom funcionamento de declarações com "this", entre outras coisas
+/* É importante usar a palavra-chave "new" antes de chamar uma função construtora
+   ela é necessária para o bom funcionamento de declarações com "this",
+   entre outras coisas */
 let joao = new Usuario("joao", "hunter2");
 ```
 
@@ -613,7 +623,8 @@ let array = [22, 34, 12, 11, 47, 115];
 
 array.sort() // 11, 115, 12, 22, 34, 47 -> Ordenação alfabética: 115 < 12
 
-// Usando "(a, b) => a - b"  como função de apoio teremos a versão numérica deste sort
+// Usando "(a, b) => a - b"  como função de apoio 
+// teremos a versão numérica deste sort
 array.sort((a, b) => a - b); // 11, 12, 22, 34, 47, 115
 ```
 
@@ -711,7 +722,8 @@ function error(err) {
   console.warn('ERROR(' + err.code + '): ' + err.message);
 };
 
-// Função assíncrona, visto que pode demorar para conseguirmos a localização do usuário por GPS
+// Função assíncrona, visto que pode demorar para 
+// conseguirmos a localização do usuário por GPS
 navigator.geolocation.getCurrentPosition(success, error)
 ```
 - Em geral, Callbacks são um modo nada intuitivo de resolver problemas relacionados a assincronia
@@ -783,7 +795,8 @@ async function funcao() {
     setTimeout(() => resolve("Finalizado!"), 1000)
   });
 
-  let resultado = await promise; // Espera até que a Promise anterior seja resolvida
+  let resultado = await promise; // Espera até que a Promise anterior
+                                 // seja resolvida
 
   alert(resultado); // Com o await, poderemos ter certeza de que o 
                     // resultado já foi declarado antes de usá-lo
@@ -831,7 +844,8 @@ barulhoDoPato();
 ```
 #### OU
 ```js
-// Também podemos importar um módulo inteiro e dar um nome a ele da seguinte maneira:
+// Também podemos importar um módulo inteiro
+// dando um nome a ele da seguinte maneira:
 import * as barulhos from "./import.js";
 
 // Usando essa sintaxe podemos chamar a função usando a notação de .:
@@ -868,7 +882,8 @@ const axios = require('axios'); // Importando o módulo do axios
 
 const configuracao = {
   method: 'post', // Método da Requisição
-  url: 'https://jsonplaceholder.typicode.com/posts',  // URL onde a Requisição será realizada
+  // URL onde a Requisição será realizada
+  url: 'https://jsonplaceholder.typicode.com/posts',  
   data: {  // Dados que devem ser enviados na Requisição
     firstName: 'Fred',
     lastName: 'Flintstone'
