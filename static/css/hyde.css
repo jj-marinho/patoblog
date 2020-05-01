@@ -59,7 +59,7 @@ html {
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
-@media (min-width: 48em) {
+@media (min-width: 991) {
   .sidebar {
     position: fixed;
     top: 0;
@@ -105,7 +105,7 @@ a.sidebar-nav-item:focus {
  * contents to the bottom of the sidebar in tablets and up.
  */
 
-@media (min-width: 48em) {
+@media (min-width: 991px) {
   .sidebar-sticky {
     position: absolute;
     right:  1rem;

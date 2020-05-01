@@ -579,7 +579,7 @@ a.badge-tag {
   max-width: 100%;
   height: auto; }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 991px) {
   html,
   body {
     font-size: 17px; }
@@ -631,7 +631,7 @@ a.badge-tag {
   .social {
     padding: 1em 0 1em 0; } }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   html,
   body {
     font-size: 17px; }
@@ -670,7 +670,7 @@ a.badge-tag {
         margin-top: 0; }
   input#menuToggle,
   input#menuToggle + label {
-    display: none; } }
+    display: none; } } */
 
 @media (min-width: 992px) {
   html,
