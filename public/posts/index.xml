@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Postagens on Pato Top</title>
+    <link>https://opato.top/posts/</link>
+    <description>Recent content in Postagens on Pato Top</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Thu, 30 Apr 2020 22:51:37 -0300</lastBuildDate>
+    
+	<atom:link href="https://opato.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flexbox e Grid</title>
+      <link>https://opato.top/posts/flexbox-e-grid/</link>
+      <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
+      
+      <guid>https://opato.top/posts/flexbox-e-grid/</guid>
+      <description>Posicionando Com Flexbox e Grid Indíce Flexbox  Background Container Itens  Grid  Background Container Itens  Bibliografia Flexbox Grid Flexbox Sobre o Flexbox  Habilita um container a alterar a largura e comprimento dos itens dentro dele Direção Principal = Main Direção Secundária = Cross Depende da propriedade flex-direction  Flex Container Definições do container flex  display: flex; flex-direction: Direção e sentido principais  row / row-reverse column / column-reverse   flex-wrap: Todos os items devem ficar na mesma linha, ou devem ir pra próxima em caso de falta de espaço?</description>
+    </item>
+    
+    <item>
+      <title>Mais um guia de JavaScript</title>
+      <link>https://opato.top/posts/conteudo-javascript/</link>
+      <pubDate>Thu, 30 Apr 2020 21:39:07 -0300</pubDate>
+      
+      <guid>https://opato.top/posts/conteudo-javascript/</guid>
+      <description>JavaScript  Informações compiladas por João G.J. Marinho a.k.a Pato do ICMC/USP A idéia foi compilar os conteúdos necessários de JavaScript puro antes de adentrar o mundo dos frameworks  Índice Introdução  Comentários do Autor O que é JavaScript O que o JavaScript pode fazer Bibliografia Essencial  Iniciando no Javascript Conectando o JavaScript na sua pagina HTML Estrutura e Tipos de Dados Comparações e suas Peculiaridades Controle de Fluxo  Especificicações do Javascript Funções Eventos Objetos JSON Arrays Métodos para Arrays JavaScript Assíncrono Módulos (Exportando e Importando) Requests usando Axios  Fico devendo um capítulo sobre manipulação do DOM</description>
+    </item>
+    
+  </channel>
+</rss>
