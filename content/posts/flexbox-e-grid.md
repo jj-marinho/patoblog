@@ -1,13 +1,10 @@
 ---
 title: "Flexbox e Grid"
 date: 2020-04-30T22:51:37-03:00
-lastmod: 2020-04-30T22:51:37-03:00
 tags : [ "dev", "flexbox", "grid", "css"]
 categories : [ "dev" ]
 layout: post
-type:  "post"
-highlight: false
-draft: false
+weight: 100
 ---
 
 # Posicionando Com Flexbox e Grid

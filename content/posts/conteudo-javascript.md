@@ -1,13 +1,11 @@
 ---
 title: "Mais um guia de JavaScript"
 date: 2020-04-30T21:39:07-03:00
-lastmod: 2020-04-30T21:39:07-03:00
 tags : [ "dev", "javascript", "languages"]
 categories : [ "dev" ]
 layout: post
-type:  "post"
-highlight: false
-draft: false
+highlight: true
+weight: 1
 ---
 
 # JavaScript
