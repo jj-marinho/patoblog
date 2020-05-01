@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projetos on Pato Top</title>
-    <link>/portfolio/</link>
+    <link>https://opato.top/portfolio/</link>
     <description>Recent content in Projetos on Pato Top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     
-	<atom:link href="/portfolio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://opato.top/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Primeiro projeto web da minha vida</title>
-      <link>/portfolio/projeto1/</link>
+      <link>https://opato.top/portfolio/projeto1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/portfolio/projeto1/</guid>
+      <guid>https://opato.top/portfolio/projeto1/</guid>
       <description>Nada a declarar, apenas veja</description>
     </item>
     

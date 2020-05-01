@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Pato Top</title>
-    <link>/categories/</link>
+    <link>https://opato.top/categories/</link>
     <description>Recent content in Categories on Pato Top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     <lastBuildDate>Thu, 30 Apr 2020 22:51:37 -0300</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://opato.top/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>dev</title>
-      <link>/categories/dev/</link>
+      <link>https://opato.top/categories/dev/</link>
       <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
       
-      <guid>/categories/dev/</guid>
+      <guid>https://opato.top/categories/dev/</guid>
       <description></description>
     </item>
     
