@@ -1,4 +1,4 @@
-<span class="section__title">{{ .Title | default "Projects" }}</span>
+<h1 class="section__title">{{ .Title | default "Projects" }}</h1>
 <div class="portfolio__content">
     {{ range first 1 (where .Data.Pages "Params.featured" "==" true) }}
         <section class="portfolio__featured-project">
