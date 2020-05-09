@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://opato.top/posts/linux-journey-pt1/</loc>
+    <lastmod>2020-04-30T22:51:37-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://opato.top/posts/flexbox-e-grid/</loc>
     <lastmod>2020-04-30T22:51:37-03:00</lastmod>
   </url>
@@ -43,12 +48,32 @@
   </url>
   
   <url>
+    <loc>https://opato.top/tags/linux/</loc>
+    <lastmod>2020-04-30T22:51:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/categories/linux/</loc>
+    <lastmod>2020-04-30T22:51:37-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://opato.top/</loc>
     <lastmod>2020-04-30T22:51:37-03:00</lastmod>
   </url>
   
   <url>
+    <loc>https://opato.top/tags/os/</loc>
+    <lastmod>2020-04-30T22:51:37-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://opato.top/posts/</loc>
+    <lastmod>2020-04-30T22:51:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opato.top/tags/sysadmin/</loc>
     <lastmod>2020-04-30T22:51:37-03:00</lastmod>
   </url>
   
@@ -73,10 +98,6 @@
   
   <url>
     <loc>https://opato.top/portfolio/</loc>
-  </url>
-  
-  <url>
-    <loc>https://opato.top/about/</loc>
   </url>
   
 </urlset>

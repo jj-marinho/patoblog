@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on O Pato</title>
+    <link>https://opato.top/categories/linux/</link>
+    <description>Recent content in linux on O Pato</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Thu, 30 Apr 2020 22:51:37 -0300</lastBuildDate>
+    
+	<atom:link href="https://opato.top/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Anotações Jornada Linux - Parte 1</title>
+      <link>https://opato.top/posts/linux-journey-pt1/</link>
+      <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
+      
+      <guid>https://opato.top/posts/linux-journey-pt1/</guid>
+      <description>Jornada Linux - Parte 1 - Grasshopper Comandos básicos Dica # Podemos repetir o comando anterior com !! visudo # whoops, esqueci o sudo sudo !! # resolvido Manipulação de Diretórios pwd # Diretório Atual cd # Mudar diretório ls # Listar diretórios # Flags -a Mostra Hidden e -l Visão Completa touch # Criar novos arquivos file # Checa o tipo de arquivo cp a1 a2 # copia um a1, com nome a2 mv a1 .</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="pt">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.69.0" />
+
+    
+    
+    
+
+<title>Anotações Jornada Linux - Parte 1 • O Pato</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Anotações Jornada Linux - Parte 1"/>
+<meta name="twitter:description" content="Jornada Linux - Parte 1 - Grasshopper Comandos básicos Dica # Podemos repetir o comando anterior com !! visudo # whoops, esqueci o sudo sudo !! # resolvido Manipulação de Diretórios pwd # Diretório Atual cd # Mudar diretório ls # Listar diretórios # Flags -a Mostra Hidden e -l Visão Completa touch # Criar novos arquivos file # Checa o tipo de arquivo cp a1 a2 # copia um a1, com nome a2 mv a1 ."/>
+
+<meta property="og:title" content="Anotações Jornada Linux - Parte 1" />
+<meta property="og:description" content="Jornada Linux - Parte 1 - Grasshopper Comandos básicos Dica # Podemos repetir o comando anterior com !! visudo # whoops, esqueci o sudo sudo !! # resolvido Manipulação de Diretórios pwd # Diretório Atual cd # Mudar diretório ls # Listar diretórios # Flags -a Mostra Hidden e -l Visão Completa touch # Criar novos arquivos file # Checa o tipo de arquivo cp a1 a2 # copia um a1, com nome a2 mv a1 ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opato.top/posts/linux-journey-pt1/" />
+<meta property="article:published_time" content="2020-04-30T22:51:37-03:00" />
+<meta property="article:modified_time" content="2020-04-30T22:51:37-03:00" /><meta property="og:site_name" content="Blog Pessoal - opato.top" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.68a2060d53b38a03a36dcd7240490201f4c66a98a230823877d8581e351121f2.css" integrity="sha256-aKIGDVOzigOjbc1yQEkCAfTGapiiMII4d9hYHjURIfI=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <style>
+  pre {
+    padding: 10px 10px;
+  }
+  
+  .img--headshot {
+    width: auto;
+    height: 130px;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+  }
+
+  html {
+    padding: env(safe-area-inset);
+  }
+  
+
+  @media screen and (max-width: 767px) {
+    .collapsible-menu {
+      position: fixed;
+      background-color: #d28445;
+      width: 100vw;
+      left: 0px;
+      z-index: 9999;
+      padding: 0px 10px;
+    }
+
+    code {
+      font-size: 0.7rem;
+    }
+
+    .content.container {
+      padding-top: 3rem;
+    }
+
+    .sidebar {
+      height: 0vh;
+    }
+
+    .sidebar-nav {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .content {
+      margin-left: 20rem;
+      max-width: 60rem;
+    }
+
+    .sidebar {
+      width: 288px;
+    }
+
+    .sidebar .container {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    .copyright {
+      margin-top: auto;
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+    .sidebar-nav > li:first-child { 
+      display: none;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  
+  @media screen and (min-width: 768px) and (max-width: 1081px){
+    .content {
+      margin-left: 10rem;
+      margin-right: 0;
+      max-width: 60rem;
+    }
+
+    .sidebar {
+      width: 10rem;
+      padding: 2rem 0rem;
+    }
+
+    .img--headshot {
+      width: auto;
+      height: 65px;
+    }
+
+    .site__title {
+      font-size: 2.3rem;
+    }
+
+    .sidebar-nav {
+      margin-bottom: 0.5rem;
+      margin-top: 0rem;
+    }
+  }
+</style>
+
+<meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi, viewport-fit=cover">
+
+</head>
+
+
+    <body class="theme-base-09 ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://opato.top/">O Pato</a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="https://opato.top/img/patotop.jpeg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">O Pato</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/">
+						<span>Inicio</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/about">
+						<span>Sobre</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Postagens</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/portfolio/">
+						<span>Portfolio</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	
+	
+	<a href="https://github.com/joaogui3856" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	<a href="https://gitlab.com/joao_gjmarinho" rel="me"><i class="fab fa-gitlab fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://linkedin.com/in/joao-guilherme-jarochinski-marinho-5aba78158" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://t.me/joao_oPato" rel="me"><i class="fab fa-telegram fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	<a href="mailto:eusou@opato.top" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  Joao Guilherme J Marinho
+  
+  <br><strike>Eu sei que a imagem<br> é de um ganso</strike><br>
+  Criado usando Hugo <br>
+
+</div>
+
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Anotações Jornada Linux - Parte 1</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> 30/04/2020
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/linux">LINUX</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/linux">linux</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/sysadmin">sysadmin</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/os">os</a>
+          
+      
+    
+    
+    <br/>
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <h1 id="jornada-linux---parte-1---grasshopper">Jornada Linux - Parte 1 - Grasshopper</h1>
+<h2 id="comandos-básicos">Comandos básicos</h2>
+<h3 id="dica">Dica</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Podemos repetir o comando anterior com !!</span>
+visudo <span style="color:#75715e"># whoops, esqueci o sudo</span>
+
+sudo !! <span style="color:#75715e"># resolvido</span>
+</code></pre></div><h3 id="manipulação-de-diretórios">Manipulação de Diretórios</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pwd <span style="color:#75715e"># Diretório Atual</span>
+cd <span style="color:#75715e"># Mudar diretório</span>
+ls <span style="color:#75715e"># Listar diretórios</span> 
+<span style="color:#75715e"># Flags -a Mostra Hidden e -l Visão Completa</span>
+touch <span style="color:#75715e"># Criar novos arquivos</span>
+file <span style="color:#75715e"># Checa o tipo de arquivo</span>
+cp a1 a2 <span style="color:#75715e"># copia um a1, com nome a2</span>
+mv a1 ../a1 <span style="color:#75715e"># Move a1, um diretório abaixo</span>
+mkdir <span style="color:#75715e"># cria um novo diretório</span>
+rm <span style="color:#75715e"># Remove um arquivo</span>
+<span style="color:#75715e"># Flags -f Força remoção -r Recursivo</span>
+
+find <span style="color:#75715e"># Ajuda a encontrar arquivos, olha em subdiretórios</span>
+<span style="color:#75715e"># Muitas flags, entre elas</span>
+<span style="color:#75715e"># -type Tipo de arquivo</span>
+<span style="color:#75715e"># -name Nome do arquivo a ser encontrado</span>
+</code></pre></div><h3 id="impressão-de-texto">Impressão de Texto</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat <span style="color:#75715e"># Mostra o conteúdo de um arquivo (também concatena arquivos)</span>
+less <span style="color:#75715e"># Mostra arquivos maiores, numa interface</span>
+</code></pre></div><h3 id="ajuda">Ajuda</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">--help <span style="color:#f92672">||</span> -h <span style="color:#75715e"># Flag usada em alguns programas para documentação</span>
+man <span style="color:#75715e"># Manual com a maioria das aplicações Linux</span>
+whatis <span style="color:#75715e"># Versão simplificada do Man, apenas algumas linhas</span>
+</code></pre></div><h2 id="lidando-com-textos">Lidando com textos</h2>
+<h3 id="stdout--stdin--pipe--tee">stdout / stdin / pipe / tee</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#------- STDOUT</span>
+<span style="color:#e6db74">&#39;&gt;&#39;</span> <span style="color:#75715e"># define stdout de um comando</span>
+    <span style="color:#75715e"># Exemplo: Enviando echo para um arquivo</span>
+echo Hello World &gt; teste.txt
+
+<span style="color:#e6db74">&#39;&gt;&gt;&#39;</span> <span style="color:#75715e"># define stdout, porém adiciona (appends) ao final do arquivo</span>
+------ STDIN
+<span style="color:#e6db74">&#39;&lt;&#39;</span> <span style="color:#75715e"># Faz o papel do teclado, muda o stdin</span>
+    <span style="color:#75715e"># Exemplo: duplicando o texto anterior</span>
+cat &lt; teste.txt &gt;&gt; teste2.txt
+
+-------- PIPE
+<span style="color:#75715e"># Podemos encaminhar o resultado de um comando</span>
+<span style="color:#75715e"># como entrada de outro comando</span>
+<span style="color:#75715e"># Exemplo: stdout de ls para less</span>
+ls -la /etc | less
+
+<span style="color:#75715e"># Para replicar o comando tanto na tela</span>
+<span style="color:#75715e"># quanto para a próxima aplicação, podemos usar o tee</span>
+<span style="color:#75715e"># Exemplo com tee</span>
+ls -la /etc | tee less
+</code></pre></div><h2 id="env-ou-environment">Env ou Environment</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># environment é um conjuto de variáveis do ambiente linux</span>
+<span style="color:#75715e"># Exemplo, variável HOME</span>
+echo $HOME
+
+<span style="color:#75715e"># Todas as variáveis de ambiente podem ser vistas em:</span>
+env
+
+<span style="color:#75715e"># Uma das mais importante é a $PATH</span>
+<span style="color:#75715e"># Ela indica pro sistema onde ficam todos os binários</span>
+<span style="color:#75715e"># podemos adicionar mais locais pro sistema pesquisar</span>
+<span style="color:#75715e"># por binários nela</span>
+</code></pre></div><h2 id="lidando-com-textos-1">Lidando com textos</h2>
+<h3 id="grep">grep</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Processador de texto mais comum do Linux</span>
+<span style="color:#75715e"># Procura padrões em arquivos</span>
+<span style="color:#75715e"># Exemplo</span>
+echo What does the fox say &gt; sample.txt
+grep fox sample.txt
+<span style="color:#75715e"># Mostra a linha onde fox se encontra</span>
+
+<span style="color:#75715e"># Podemos usar PIPES no grep</span>
+env | grep PATH USER
+<span style="color:#75715e"># Podemos ignorar maiusculas e minusculas usando -i</span>
+env | grep -i path
+<span style="color:#75715e"># Podemos ver o número da linha com -n</span>
+env | grep -in path
+
+<span style="color:#75715e"># grep também aceita regex, explicações a seguir</span>
+</code></pre></div><h3 id="regex">Regex</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Matches literais</span>
+<span style="color:#75715e">## Só adicionar a expressão como argumento para grep</span>
+Exemplo: linha que contém <span style="color:#e6db74">&#34;lib&#34;</span>
+env | grep -i <span style="color:#e6db74">&#34;lib&#34;</span>
+
+<span style="color:#75715e"># Matches com ancora</span>
+<span style="color:#75715e">## Se relacionam a determinados pontos na linha</span>
+<span style="color:#75715e"># ^inicio / fim$</span>
+<span style="color:#75715e"># Exemplo: Linha que inicia com &#34;path&#34;</span>
+env | grep -i <span style="color:#e6db74">&#34;^path&#34;</span>
+
+<span style="color:#75715e"># Matches por caractere</span>
+<span style="color:#75715e">## usando &#39;.&#39; como wildcard pra qualquer caractere</span>
+<span style="color:#75715e">## usando [] e especificando alguma condição dentro</span>
+<span style="color:#75715e"># Exemplo: match para números</span>
+env | grep -n <span style="color:#e6db74">&#34;[0-9]&#34;</span>
+
+<span style="color:#75715e"># Podemos fazer a negação do exemplo anterior usando ^</span>
+<span style="color:#75715e"># Exemplo: match para tudo, menos números</span>
+env | grep -n <span style="color:#e6db74">&#34;[^0-9]&#34;</span>
+
+<span style="color:#75715e"># Repetição</span>
+<span style="color:#75715e">## Podemos usar o operador * para indicar que se deve repetir um padrão mais de uma vez</span>
+<span style="color:#75715e"># Exemplo: match para tudo que contenha texto dentro de parenteses</span>
+<span style="color:#75715e"># (Joao), por exemplo</span>
+grep -in <span style="color:#e6db74">&#34;([a-z ]*)&#34;</span>
+
+<span style="color:#75715e"># Inversor</span>
+<span style="color:#75715e">## Podemos usar a tag -v para inverter os resultados</span>
+<span style="color:#75715e">## Tudo que não entraria, entra e vice-versa</span>
+<span style="color:#75715e"># Exemplo: Match para linha sem números</span>
+grep -vin <span style="color:#e6db74">&#34;[0-9]&#34;</span>
+</code></pre></div><h2 id="controle-de-usuários">Controle de usuários</h2>
+<h3 id="arquivos-de-usuários">Arquivos de usuários</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">su <span style="color:#75715e"># substituir usuário</span>
+<span style="color:#75715e"># entra no root se não houver segundo argumento</span>
+
+<span style="color:#75715e"># sudoers -&gt; quem tem acesso ao comando sudo no seu sistema</span>
+<span style="color:#75715e"># podemos ver e editar o sudoers usando o comando:</span>
+sudo visudo
+
+<span style="color:#75715e"># Outro arquivo importante é /etc/passwd</span>
+<span style="color:#75715e"># Contém varias informações sobre cada usuário do sistema</span>
+<span style="color:#75715e"># Limitado por &#39;:&#39; temos:</span>
+<span style="color:#75715e"># username:senha:UID:GID:GECOS:home:shell</span>
+<span style="color:#75715e"># Observação: x na senha indica que a senha esta em /etc/shadow de maneira encriptada</span>
+</code></pre></div><h3 id="ferramentas-para-usuários">Ferramentas para usuários</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">useradd jones <span style="color:#75715e"># cria usuário jones</span>
+userdel jones <span style="color:#75715e"># deleta usuário jones</span>
+passwd jones <span style="color:#75715e"># Troca a própria senha</span>
+<span style="color:#75715e"># Se houver um nome de usuário e você estiver como root</span>
+<span style="color:#75715e"># troca a senha de outro usuário</span>
+</code></pre></div><h2 id="permissões">Permissões</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 4 partes para cada arquivo</span>
+
+ls -l
+<span style="color:#75715e"># dir? | user | group | others</span>
+<span style="color:#75715e"># -    | rwx  | r-x   | r-x</span>
+
+
+<span style="color:#75715e">## Alterando permissões</span>
+<span style="color:#75715e"># Podemos usar o comando chmod + ou -</span>
+<span style="color:#75715e"># Ex:</span>
+chmod u+x arquivo
+// Adicionar <span style="color:#f92672">(</span>+<span style="color:#f92672">)</span> permissão ao usuário <span style="color:#f92672">(</span>u<span style="color:#f92672">)</span> de executar <span style="color:#f92672">(</span>x<span style="color:#f92672">)</span>
+
+<span style="color:#75715e"># Podemos mudar o dono do arquivo usando chown e chgrp</span>
+chown jorge arquivo
+chgrp patos arquivo
+<span style="color:#75715e"># Agora o arquivo pertence ao user jorge e grupo patos</span>
+
+<span style="color:#75715e"># Podemos mudar as permissões padrões usando umask</span>
+umask <span style="color:#ae81ff">021</span>  <span style="color:#75715e"># Retira permissões</span>
+<span style="color:#75715e"># Usuário: 7 = rwx, Grupo = r-x, Others: rw-</span> 
+
+<span style="color:#75715e"># Set UID &amp; GID</span>
+<span style="color:#75715e"># Poder de pedir permissão do dono de um arquivo para usá-lo</span>
+<span style="color:#75715e"># denota-se com:</span>
+chmod u+s <span style="color:#f92672">||</span> chmod <span style="color:#ae81ff">4755</span> <span style="color:#75715e"># 4 pré-fixado</span>
+<span style="color:#75715e"># Podemos fazer o mesmo com um grupo</span>
+chmod g+s <span style="color:#f92672">||</span> chmod <span style="color:#ae81ff">2755</span> <span style="color:#75715e"># 2 pré-fixado</span>
+
+<span style="color:#75715e"># Sticky files / directories</span>
+<span style="color:#75715e"># Diretórios que só podem ser deletados pelo dono ou root</span>
+chmod +t diretorio 
+</code></pre></div><h2 id="processos">Processos</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Processos são programas</span>
+<span style="color:#75715e"># Gerenciados pelo kernel, cada um tem um ID (PID)</span>
+
+ps <span style="color:#75715e"># Quais processos estão rodando no momento</span>
+
+ps -aux <span style="color:#75715e"># a: All, u: ExtraInfo, x: Sem TTY</span>
+
+<span style="color:#75715e"># Interfaces mais elegantes</span>
+top
+htop
+</code></pre></div><h3 id="tty">TTY</h3>
+<ul>
+<li>Terminal nativo
+<ul>
+<li>TTY no <code>top</code></li>
+</ul>
+</li>
+<li>Roda no background</li>
+<li>Quando abrimos o &ldquo;terminal&rdquo;, estamos abrindo um emulador de terminal ou pseudoterminal
+<ul>
+<li>com nome PTS no <code>top</code></li>
+</ul>
+</li>
+<li>Processos intimamente ligados com o sistema (como daemons) não usam terminal, portanto no <code>top</code> vemos ?</li>
+</ul>
+<h3 id="sinais">Sinais</h3>
+<ul>
+<li>Enviados do OS para os programas</li>
+<li>Notificação de que alguma coisa aconteceu</li>
+<li>Tipos de notificalçoes
+<ul>
+<li>SIGHUP -&gt; Terminal de controle fechou</li>
+<li>SIGINT -&gt; Interrompido Ctrl-C por exemplo</li>
+<li>SIGTERM -&gt; Termina, porém deixa fazer cleanup</li>
+<li>SIGKILL -&gt; Press F to pay respects</li>
+<li>SIGSTOP -&gt; Para ou suspende</li>
+</ul>
+</li>
+<li>Niceness -&gt; &ldquo;legaldade&rdquo;</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Niceness</span>
+<span style="color:#75715e"># Quanto mais legal, menos prioridade pra CPU</span>
+top <span style="color:#75715e"># Coluna NI identifica</span>
+renice <span style="color:#ae81ff">10</span> -p <span style="color:#ae81ff">3245</span> <span style="color:#75715e"># Muda a niceness de um processo</span>
+</code></pre></div><h3 id="estados">Estados</h3>
+<ul>
+<li>R: Running, execuntando</li>
+<li>S: Sleep, dormindo, esperando por evento</li>
+<li>D: Deu pau, ta dormindo pra sempre</li>
+<li>Z: Zombie, esperando o processo Pai dar await</li>
+<li>T: Stopped, processo susoenso</li>
+</ul>
+<h3 id="diretório-proc">Diretório /proc</h3>
+<ul>
+<li>Visão do kernel sobre sistema</li>
+<li>Diretório com todos os processos atuais</li>
+</ul>
+<h3 id="jobs">Jobs</h3>
+<ul>
+<li>Maneira de mandar um processo pro background</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sleep <span style="color:#ae81ff">1000</span>
+<span style="color:#75715e"># Ctrl-Z, Stopped</span>
+bg <span style="color:#75715e"># manda processo pro background</span>
+jobs <span style="color:#75715e"># Vê os processos no Background. +: Recente, -: Antigo</span>
+fg %ID <span style="color:#75715e"># Retorna um processo pro foreground, ID = Job ID</span>
+kill %ID <span style="color:#75715e"># mata processo rodando como job, usando o Job ID</span>
+</code></pre></div><h2 id="packages--pacotes">Packages || Pacotes</h2>
+<ul>
+<li>Packages são a maneira de se distribuir software no Linux</li>
+<li>Muitos arquivos distribuidos em um pacote coeso (Photoshop, Firefox, vscode, etc)</li>
+<li>São provenientes de package managers</li>
+<li>Podem ser instalados diretamente, e até compilados da source</li>
+<li>Pacotes são interligados e tem dependências necessárias em outros pacotes (glibc, por exemplo)</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Por vezes, um programa vem no formato gzip/tar</span>
+<span style="color:#75715e"># Podemos extraílos usando o utilitário tar</span>
+tar czf criandoArquivo.tar.gz
+tar xzf extraindoArquivo.tar.gz
+</code></pre></div><h4 id="ao-compilar-da-source-use-checkinstall">Ao compilar da source use <code>checkinstall</code></h4>
+<ul>
+<li>sudo make install/uninstall muitas vezes não realiza toda a preparação necessária no pacote</li>
+<li><code>checkinstall</code> cria um .deb e o instala</li>
+<li>Pode ser usado em Fedora/RHEL com a flag -R</li>
+</ul>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/posts/flexbox-e-grid/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Flexbox e Grid</span>
+    </a>
+    
+    
+    <a href="/posts/conteudo-javascript/" class="navigation-next">
+      <span class="navigation-tittle">Mais um guia de JavaScript</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
+
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
+
+
+
+    </body>
+</html>

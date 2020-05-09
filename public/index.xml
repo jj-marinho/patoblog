@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Anotações Jornada Linux - Parte 1</title>
+      <link>https://opato.top/posts/linux-journey-pt1/</link>
+      <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
+      
+      <guid>https://opato.top/posts/linux-journey-pt1/</guid>
+      <description>Jornada Linux - Parte 1 - Grasshopper Comandos básicos Dica # Podemos repetir o comando anterior com !! visudo # whoops, esqueci o sudo sudo !! # resolvido Manipulação de Diretórios pwd # Diretório Atual cd # Mudar diretório ls # Listar diretórios # Flags -a Mostra Hidden e -l Visão Completa touch # Criar novos arquivos file # Checa o tipo de arquivo cp a1 a2 # copia um a1, com nome a2 mv a1 .</description>
+    </item>
+    
+    <item>
       <title>Flexbox e Grid</title>
       <link>https://opato.top/posts/flexbox-e-grid/</link>
       <pubDate>Thu, 30 Apr 2020 22:51:37 -0300</pubDate>
@@ -36,15 +45,6 @@
       
       <guid>https://opato.top/portfolio/projeto1/</guid>
       <description>Nada a declarar, apenas veja</description>
-    </item>
-    
-    <item>
-      <title>Sobre Mim</title>
-      <link>https://opato.top/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opato.top/about/</guid>
-      <description>Curriculo Por enquanto é melhor acessar meu Linkedin Linkedin </description>
     </item>
     
   </channel>
