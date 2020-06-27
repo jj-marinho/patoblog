@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "hyde-hyde.css",
-	"sourceRoot": "/home/pato/Documentos/personal_projects/patoblog",
+	"sourceRoot": "/home/patinho/wsl_documents/personal_projects/patoblog",
 	"sources": [
 		"assets/scss/hyde-hyde.scss",
 		"assets/scss/hyde-hyde/_variables.scss",

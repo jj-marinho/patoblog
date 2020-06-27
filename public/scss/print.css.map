@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "print.css",
-	"sourceRoot": "/home/pato/Documentos/personal_projects/patoblog",
+	"sourceRoot": "/home/patinho/wsl_documents/personal_projects/patoblog",
 	"sources": [
 		"assets/scss/print.scss",
 		"assets/scss/hyde-hyde/_variables.scss",
